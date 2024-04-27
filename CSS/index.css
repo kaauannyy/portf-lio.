@@ -62,7 +62,7 @@ header nav ul li{
 
 header .contato a{
     padding: 10px 50px;
-    margin-left: 620px;
+    margin-left: 650px;
     font-size: 18px;
     font-weight: 600px;
     background-color: blueviolet;
@@ -78,7 +78,7 @@ header .contato a{
 /* estilo do topo do site */
 
 section.topo-site .espaco {
-    padding: 40px 4%;
+    padding: 80px 4%;
 }
 
 section.topo-site .espaco  .flex{
@@ -99,7 +99,8 @@ section.topo-site .espaco  .flex{
 
 .topo-site .texto-top p{
     color: white;
-    margin: 40px 0;
+    margin: 10px 0;
+    text-align: justify;
    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
@@ -114,10 +115,28 @@ section.topo-site .espaco  .flex{
     
 }
 
+.topo-site .texto-top .contato img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.topo-site .texto-top .contato img:hover{
+    box-shadow: 0px 0px 8px #be8af1;
+    transform: scale(1.05);
+}
+
 /* estilo do projetos */
 
 section .sites{
-    padding: 40px 4%;
+    padding: 88px 4%;
+    box-shadow: 0 0 40px 10px #e9c3ff;
 }
 
 section .sites .flex .projetos{
@@ -140,4 +159,165 @@ section .sites .flex .projetos{
 .sites .projetos h3{
     font-size: 28px;
     margin: 15px 0;
+}
+
+.projetos h3 a{
+    color: #d9a1fa;
+    text-decoration: none;
+}
+.projetos h3 a:hover{
+    color: #120a1a
+}
+ 
+
+
+.filtro ul li{
+    display: inline-block;
+    list-style-type: none;
+    border: 2px solid;
+    border-radius: 8px;
+    width: 70px;
+    text-align: center;
+    color: #d9a1fa;
+    background-color: #7b50a5; 
+}
+.elemento1, .elemento2 {
+    display: inline-block;
+}
+   
+.elemento1 .elemento2{
+    color: #be8af1; 
+    line-height: 1.25rem;
+    font-weight: 500;
+   margin-right: 10px;
+
+}
+
+/* estilação da formação */
+section.formacao{
+    padding: 175px 4%;
+    color: white;
+}
+
+section.formacao .flex  h2{
+    font-size: 30px;
+    color: #d9a1fa;
+    margin-bottom: 20px;
+}
+
+section.formacao .flex{
+    align-items: center;
+    gap: 60px;
+}
+section.formacao .flex p{
+    font-size: 19px;
+}
+
+section.formacao .cursos ul li{
+    margin-top: 10px;
+    color: #be8af1;
+    list-style-type: disc;
+    font-size: 18px;
+}
+
+
+section.formacao .cursos{
+    margin: 50px;
+}
+
+/* estilo formulario */
+
+section.formulario{
+    padding: 142px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #d9a1fa;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: rgb(8, 8, 8);
+}
+
+form textarea{
+    resize: none;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    font-weight: 700;
+    cursor: pointer;
+    transform: .2s;
+}
+
+form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #be8af1;
+    transform: scale(1.05);
+}
+
+/* estilização do footer */
+
+footer{
+    padding: 110px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+footer .telefone{
+    color: white;
+    font-size: 22px;
+    display: inline-block;
+}
+
+footer .contato  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+footer .cima-footer {
+    padding: 40px 0;
+}
+
+.baixo{
+    border-bottom: 2px solid #be8af1;
+}
+
+footer .cima-footer img{
+    width: 60px;
+    height: 60px;
+}
+
+footer .cima-footer p a{
+    font-size: 25px;
+    color: white;
 }
