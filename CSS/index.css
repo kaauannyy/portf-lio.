@@ -77,11 +77,11 @@ header .contato a{
 
 /* estilo do topo do site */
 
-section .espaco .topo-site{
+section.topo-site .espaco {
     padding: 40px 4%;
 }
 
-section  .espaco .topo-site .flex{
+section.topo-site .espaco  .flex{
     align-items: center;
     justify-content: center;
     gap: 90px;
